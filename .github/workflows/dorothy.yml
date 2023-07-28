@@ -25,12 +25,12 @@ jobs:
         with:
           path: ~/.local
           key: ${{ runner.os }}
-      # - name: 'Configure'
-      #   shell: bash
-      #   run: |
-      #     chmod +x "$DOROTHY/commands/"*
-      #     source "$DOROTHY/sources/login.sh"
-      #     dorothy dev
+      - name: 'Configure'
+        shell: bash
+        run: |
+          chmod +x "$DOROTHY/commands/"*
+          source "$DOROTHY/sources/login.sh"
+          dorothy dev
 
 
       # - name: 'Format'

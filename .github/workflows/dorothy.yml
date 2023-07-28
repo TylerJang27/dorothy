@@ -53,4 +53,6 @@ jobs:
         shell: bash
         run: |
           source "$DOROTHY/sources/login.sh"
+          echo "done with login"
           dorothy format
+          echo "done with format"

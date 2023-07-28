@@ -47,12 +47,12 @@ jobs:
       #       git commit -a -m "${{ env.CI_COMMIT_MESSAGE }}"
       #       git push
       #     fi
-      # - name: 'Trunk Check'
-      #   uses: trunk-io/trunk-action@v1
+      - name: 'Trunk Check'
+        uses: trunk-io/trunk-action@v1
       - name: 'Test'
         shell: bash
         run: |
-          source "$DOROTHY/sources/login.sh"
+          # source "$DOROTHY/sources/login.sh"
           echo "done with login"
           dorothy format
           echo "done with format"
